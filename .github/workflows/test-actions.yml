@@ -1,0 +1,11 @@
+# This workflow is triggered when publishing a GitHub release
+on: push
+    
+jobs:
+  test_me:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run action 2
+        uses: wouter-admiraal-sonarsource/action-test-2@master
+      - name: Run action 1
+        uses: wouter-admiraal-sonarsource/action-test-1@master
